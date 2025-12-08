@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte De Vos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <img class="site-header-logotipo" src="../img/logo.png" alt="Logo del sitio">
+        <p class="site-header-p">Arte De Vos</p>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="../index.html" class="site-header-navegacion">Inicio</a></li>
+                <li><a href="./galeria.html" class="site-header-navegacion">Galeria</a></li>
+                <li><a href="./tienda.html" class="site-header-navegacion">Tienda</a></li>
+                <li><a href="./acercade.html" class="site-header-navegacion">A cerca de</a></li>
+                <li><a href="./contacto.html" class="site-header-navegacion">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<div class="site-fondo"></div>
+
+        <section class="formulario">
+            <h1>Contactame</h1>
+            <p>
+                ¿Te interesa encargar un cuadro? 
+                Llena el formulario o escribime a alguna de mis redes 
+            </p>
+            <form action="https://formspree.io/f/xwpwpkpz" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="numero">Número de teléfono:</label>
+    <input type="number" id="numero" name="numero" required>
+
+    <label for="tamaño">Tamaño del cuadro:</label>
+    <select id="tamaño" name="tamaño">
+      <option value="18x24">18x24</option>
+      <option value="20x20">20x20</option>
+      <option value="24x30">24x30</option>
+      <option value="30x30">30x30</option>
+      <option value="30x40">30x40</option>
+      <option value="35x45">35x45</option>
+      <option value="40x50">40x50</option>
+    </select>
+
+    <label for="mensaje">Mensaje o idea:</label>
+    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+    <button type="submit">Enviar encargo</button>
+  </form>
+
+        </section>
+    </main>
+    
+<footer class="site-footer">
+    <div class="site-footer-section">
+<div class="footer-logo">
+        <img class="site-footer-logotipo" src="../img/logo.png" alt="Logo del sitio">
+         <p class="site-footer-titulo">Arte De Vos</p>
+</div>
+<section class="footer-contacto">
+    <h3 class="site-footer-h3">Contactame</h3>
+    <ul>
+        <li>
+            <img src="../img/instagram-logo.webp" class="site-footer-imagen" alt="Logo de instagram">
+            <a href="https://www.instagram.com/arte.devos?igsh=MXM3YXV0NnlvYmkzaA==" class="site-footer-navegacion" target="_blank">Instagram</a>
+        </li>
+        <li>
+            <img src="../img/tiktok-logo.jpg" class="site-footer-imagen" alt="Logo de TikTok">
+            <a href="https://www.tiktok.com/@arte.de.vos?_t=ZS-90rJQ4nRTnA&_r=1" class="site-footer-navegacion" target="_blank">TikTok</a>
+        </li>
+        <li>
+            <img src="../img/gmail-logo.png" class="site-footer-imagen" alt="Logo de Gmail ">
+            <a href="#" class="site-footer-navegacion" target="_blank">Mail</a>
+        </li>
+        <li>
+            <img src="../img/check-in-location-icon-in-blue-circle-png.webp" class="site-footer-imagen" alt="Ubicación">
+            <a href="https://maps.app.goo.gl/CZTKvU5bpbGHZ7Dy5" class="site-footer-navegacion" target="_blank">Rosario, Santa Fe, Argentina</a>
+        </li>
+    </ul>  
+</section>
+    
+<section class="footer-navegacion">
+    <h3 class="site-footer-h3" >Navegación</h3>
+            <nav>
+            <ul>
+                <li><a href="../index.html" class="site-footer-navegacion" >Inicio</a></li>
+                <li><a href="./galeria.html" class="site-footer-navegacion" >Galeria</a></li>
+                <li><a href="./tienda.html" class="site-footer-navegacion" >Tienda</a></li>
+                <li><a href="./acercade.html" class="site-footer-navegacion" >A cerca de</a></li>
+                <li><a href="./contacto.html" class="site-footer-navegacion" >Contacto</a></li>
+            </ul>
+        </nav>
+</section>
+</div>
+<div class="site-footer-copyright">   
+      <p>&copy; 2025 Arte De Vos. Todos los derechos reservados.</p>
+      </div> 
+</footer>
+     
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* ====== GENERALES ====== */
+*{
+  font-family: "Playfair Display", "sans-serif";
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+ list-style: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:root{
+    --colorNegro: #000;
+    --colorBlanco: rgb(250, 250, 250);
+    --colorVioletaOscuro: #7f119b;
+    --colorLila: #ce92ff;
+}
+
+/* ====== SITE HEADER ====== */
+
+.site-header-p{font-size: 5rem; 
+  color: var(--colorBlanco);}
+
+.site-header-logotipo{width: 12rem}
+.site-header-navegacion{color:var(--colorBlanco); 
+  text-decoration:none; 
+  font-size: 1.5rem;}
+
+.site-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;             
+  padding: 3rem 3rem ;
+  background-color: var(--colorVioletaOscuro);
+}
+.site-header nav ul {
+  display: flex;
+  gap: 2rem; /* espacio entre los botones */
+}
+
+/* ====== SITE FOOTER ====== */
+.site-footer-logotipo{width: 14rem;}
+.site-footer-titulo{font-size: 2.9rem;}
+.site-footer{background-color: var(--colorVioletaOscuro); 
+  color: var(--colorBlanco);}
+.site-footer-copyright{ display: flex;
+  color:var(--colorBlanco);
+  justify-content: center;
+  padding: 4rem;}
+.site-footer-navegacion{color:var(--colorBlanco);
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 1.7}
+
+.site-footer-imagen{width: 1.5rem;}
+.site-footer-h3{font-size: 2rem;}
+
+.site-footer-section{  display: flex;
+  justify-content: center; 
+  align-items: center;             
+  gap: 15rem;
+  padding: 6rem 0rem 0rem;}
+
+
+  /* ====== SITE MAIN FONDO ====== */
+
+.site-fondo {
+   position: fixed;              
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/descarga.jpeg);
+    background-size: cover;       
+    background-position: center;
+    z-index: -1;                  /* Detrás de todo el contenido */
+}
+
+/* ====== SITE MAIN CONTENIDO INDEX ====== */
+
+.index-main-presentacion-h1{display: flex; 
+  font-size: 4rem;
+  justify-content: center;
+  padding: 3rem;}
+.index-main-presentacion-p{display: flex; 
+  font-size: 2rem;
+  justify-content: center;
+  padding: 0rem;}
+.index-main-presentacion-boton{display: flex; 
+  font-size: 2rem;
+  justify-content: center; 
+  color: var(--colorVioletaOscuro);
+  padding: 2rem;}
+
+.index-h2{display: flex; 
+  font-size: 4rem;
+  justify-content: center;
+  padding: 10rem 3rem 3rem;}
+
+.index-main img{width: 30rem;}
+.tienda-main img{width: 30rem;}
+.galeria-main img{width: 30rem;}
+
+.index-frase{font-size: 2.2rem; 
+  padding: 6rem; 
+  text-align: center;
+  line-height: 1.7; 
+  border:0.2rem solid;
+  margin:3rem;
+  background-color:rgba(127, 17, 155,0.25);}
