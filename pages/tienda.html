@@ -8,70 +8,112 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <header class="site-header">
         <img class="site-header-logotipo" src="../img/logo.png" alt="Logo del sitio">
         <p class="site-header-p">Arte De Vos</p>
-        <nav aria-label="Menú principal">
-            <ul>
-                <li><a href="../index.html" class="site-header-navegacion">Inicio</a></li>
-                <li><a href="./galeria.html" class="site-header-navegacion">Galeria</a></li>
-                <li><a href="./tienda.html" class="site-header-navegacion">Tienda</a></li>
-                <li><a href="./acercade.html" class="site-header-navegacion">A cerca de</a></li>
-                <li><a href="./contacto.html" class="site-header-navegacion">Contacto</a></li>
-            </ul>
-        </nav>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon navbar-toggler-icon-white"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../pages/galeria.html">Galería</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../pages/acercade.html">Acerca de</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
     </header>
 
 <main class="tienda-main">
     <div class="site-fondo"></div>
     
-    <h2>Tienda</h2>
-    <p>Elegí el tamaño e idea que desees</p>
-    <div class="tienda-lista-de-productos"> 
-        <article>
-        <img src="../img/18x24.jpg" alt="Cuadro artístico personalizado 18x24">
-        <h3>Cuadro 18x24</h3>
-        <p class="precio">ARS 38.000</p>
-        <a href="../pages/contacto.html" class="boton-encargar">Encargar</a>
+            <section class="tienda-lista-de-productos">
+            <h2 class="index-h2">Tienda</h2>
+            
+            <section class="contenerdor-flex-card">
+
+
+        <article class="producto-card">
+        <img class="producto-card-img" src="../img/18x24.jpg" alt="Cuadro artístico personalizable 18x24">    
+        <h3 class="producto-card-titulo">Cuadro personalizable 18x24cm</h3>
+        <p class="productos-titulo-descripcion">Elige la idea y la plasmaremos aquí</p>
+        <p class="producto-card-precio">ARS 38.000</p>
+        <a href="./pages/contacto.html" class="producto-card-boton">Encargar</a>
         </article>
-        <article>
-        <img src="../img/20x20.jpg" alt="Cuadro artístico personalizado 20x20">
-        <h3>Cuadro 20x20</h3>
-        <p class="precio">ARS 40.000</p>
-        <a href="../pages/contacto.html" class="boton-encargar">Encargar</a>
+
+        <article class="producto-card">
+        <img class="producto-card-img" src="../img/20x20.jpg" alt="Cuadro artístico personalizable 20x20">    
+        <h3 class="producto-card-titulo">Cuadro personalizable 20x20</h3>
+        <p class="productos-titulo-descripcion">Elige la idea y la plasmaremos aquí</p>
+        <p class="producto-card-precio">ARS 40.000</p>
+        <a href="./pages/contacto.html" class="producto-card-boton">Encargar</a>
         </article>
-        <article>
-        <img src="../img/24x30.jpg" alt="Cuadro artístico personalizado 24x30">
-        <h3>Cuadro 24x30</h3>
-        <p class="precio">ARS 45.000</p>
-        <a href="../pages/contacto.html" class="boton-encargar">Encargar</a>
+
+        <article class="producto-card">
+        <img class="producto-card-img" src="../img/24x30.jpg" alt="Cuadro artístico personalizable 24x30">    
+        <h3 class="producto-card-titulo">Cuadro personalizable 24x30cm</h3>
+        <p class="productos-titulo-descripcion">Elige la idea y la plasmaremos aquí</p>
+        <p class="producto-card-precio">ARS 45.000</p>
+        <a href="./pages/contacto.html" class="producto-card-boton">Encargar</a>
         </article>
-        <article>
-        <img src="../img/30x30.jpg" alt="Cuadro artístico personalizado 30x30">
-        <h3>Cuadro 30x30</h3>
-        <p class="precio">ARS 48.000</p>
-        <a href="../pages/contacto.html" class="boton-encargar">Encargar</a>
+
+        <article class="producto-card">
+        <img class="producto-card-img" src="../img/30x30.jpg" alt="Cuadro artístico personalizable 30x30">    
+        <h3 class="producto-card-titulo">Cuadro personalizable 30x30cm</h3>
+        <p class="productos-titulo-descripcion">Elige la idea y la plasmaremos aquí</p>
+        <p class="producto-card-precio">ARS 48.000</p>
+        <a href="./pages/contacto.html" class="producto-card-boton">Encargar</a>
         </article>
-        <article>
-        <img src="../img/30x40.jpg" alt="Cuadro artístico personalizado 30x40">
-        <h3>Cuadro 30x40</h3>
-        <p class="precio">ARS 53.000</p>
-        <a href="../pages/contacto.html" class="boton-encargar">Encargar</a>
+
+        <article class="producto-card">
+        <img class="producto-card-img" src="../img/30x40.jpg" alt="Cuadro artístico personalizable 30x40">    
+        <h3 class="producto-card-titulo">Cuadro personalizable 30x40cm</h3>
+        <p class="productos-titulo-descripcion">Elige la idea y la plasmaremos aquí</p>
+        <p class="producto-card-precio">ARS 53.000</p>
+        <a href="./pages/contacto.html" class="producto-card-boton">Encargar</a>
         </article>
-        <article>
-        <img src="../img/35x45.jpg" alt="Cuadro artístico personalizado 35x45">
-        <h3>Cuadro 35x45</h3>
-        <p class="precio">ARS 56.000</p>
-        <a href="../pages/contacto.html" class="boton-encargar">Encargar</a>
+
+        <article class="producto-card">
+        <img class="producto-card-img" src="../img/35x45.jpg" alt="Cuadro artístico personalizable 35x45">    
+        <h3 class="producto-card-titulo">Cuadro personalizable 35x45cm</h3>
+        <p class="productos-titulo-descripcion">Elige la idea y la plasmaremos aquí</p>
+        <p class="producto-card-precio">ARS 56.000</p>
+        <a href="./pages/contacto.html" class="producto-card-boton">Encargar</a>
         </article>
-        <article>
-        <img src="../img/40x50.jpg" alt="Cuadro artístico personalizado 40x50">
-        <h3>Cuadro 40x50</h3>
-        <p class="precio">ARS 60.000</p>
-        <a href="../pages/contacto.html" class="boton-encargar">Encargar</a>
-        </article>                                  
+
+        <article class="producto-card">
+        <img class="producto-card-img" src="../img/40x50.jpg" alt="Cuadro artístico personalizable 40x50">    
+        <h3 class="producto-card-titulo">Cuadro personalizable 40x50cm</h3>
+        <p class="productos-titulo-descripcion">Elige la idea y la plasmaremos aquí</p>
+        <p class="producto-card-precio">ARS 60.000</p>
+        <a href="./pages/contacto.html" class="producto-card-boton">Encargar</a>
+        </article>
+
+            </section>   
+
+        </section>
+                
     </div>
 </main>
        
@@ -120,6 +162,9 @@
       <p>&copy; 2025 Arte De Vos. Todos los derechos reservados.</p>
       </div> 
 </footer>
-     
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
