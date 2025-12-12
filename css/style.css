@@ -227,6 +227,18 @@ color: var(--colorNegro);
 font-size: 3.5rem;
 }
 
+.formulario button{
+    font-size: 1.2rem;
+  background-color: var(--colorVioletaOscuro);
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
 /*===================ACERCA DE=======================*/
 .acercade-contenedor{
     display: flex;
@@ -369,6 +381,10 @@ flex-direction: row;
   }
 .formulario label{
   padding: 0.5rem;
+}
+
+.formulario button{
+margin-top: 2rem;
 }
 
 /*==================== A CERCA DE ===================*/
