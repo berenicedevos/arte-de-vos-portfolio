@@ -1,0 +1,27 @@
+@use "base/base";
+
+/* ====== SITE HEADER ====== */
+@use "./layout/header";
+
+/* ====== SITE FOOTER ====== */
+@use "./layout/footer";
+
+/*====================INDEX CARRUSEL===================*/
+@use "./components/carousel" ;
+
+/* ====== INDEX CONTENIDO ====== */
+@use "./pages/index";
+
+/*====================GALERIA===================*/
+@use "./pages/tienda";
+
+/*======================CONTACTO==================*/
+@use "./pages/contacto";
+
+/*===================ACERCA DE====================*/
+@use "./pages/acercade";
+
+/*====================GALERIA===================*/
+@use "./pages/galeria";
+
+

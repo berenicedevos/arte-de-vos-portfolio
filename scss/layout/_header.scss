@@ -1,0 +1,52 @@
+/* ====== SITE HEADER ====== */
+@use "../utilities/variables" as *;
+
+.site-header-p{font-size: 2.5rem; 
+  color: $color-blanco;}
+
+.site-header-logotipo{width: 10rem}
+/* .site-header-navegacion{color:var(--colorBlanco); 
+  text-decoration:none; 
+  font-size: 1.5rem;} */
+
+.navbar.bg-body-tertiary {
+  background-color: $color-violeta-oscuro !important;
+}
+
+.nav-link {
+  color: $color-blanco!important;
+  font-size: 1.2rem !important;
+}
+
+.navbar-toggler-icon.navbar-toggler-icon-white {
+  filter: invert(1) !important;
+}
+  
+.site-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;             
+  padding: 3rem 3rem ;
+  background-color: $color-violeta-oscuro;
+  flex-direction: column;
+}
+
+
+/*==================== RESPONSIVE ===================*/
+
+/*==================== TABLET ===================*/
+
+@media only screen and (min-width:768px){
+    .site-header{
+  font-size: 3.5rem;
+flex-direction: row;
+}
+}
+
+/*==================== DESKTOP ===================*/
+@media only screen and (min-width:992px){
+  .site-header{
+  font-size: 3.5rem;
+flex-direction: row;
+}
+}

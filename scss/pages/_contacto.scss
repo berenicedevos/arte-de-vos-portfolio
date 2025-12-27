@@ -1,0 +1,68 @@
+/*======================CONTACTO FORMULARIO===================*/
+@use "../utilities/variables" as *;
+
+
+.form-container {
+    width: 90%;
+    margin: 0 auto;      
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;         
+    padding: 0.5rem;
+    margin-bottom: 1.2rem;
+    border: 2px solid $color-lila;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.formulario h1, p {
+  margin-top: 4rem;
+  text-align: center;
+}
+.formulario h1 {
+font-size: 3.5rem;
+}
+
+.formulario button{
+    font-size: 1.2rem;
+  background-color: $color-violeta-oscuro;
+  color: $color-blanco;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+/*==================== RESPONSIVE ===================*/
+
+/*==================== DESKTOP ===================*/
+@media only screen and (min-width:992px){
+
+/*==================== CONTACTO FORM ===================*/
+.form-container input,
+.form-container select,
+.form-container textarea,
+.formulario label {
+    width: 55rem;
+    align-items: center;
+    display: block;    
+    margin: 0 auto;  
+  }
+.formulario label{
+  padding: 0.5rem;
+}
+
+.formulario button{
+margin-top: 2rem;
+}
+}

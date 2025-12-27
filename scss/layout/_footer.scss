@@ -1,0 +1,54 @@
+/* ====== SITE FOOTER ====== */
+@use "../utilities/variables" as *;
+
+.site-footer-logotipo{width: 14rem;}
+.site-footer-titulo{font-size: 2.9rem;}
+.site-footer{background-color: $color-violeta-oscuro; 
+  color: $color-blanco;}
+.site-footer-copyright{ display: flex;
+  color: $color-blanco;
+  justify-content: center;
+  padding: 4rem;}
+.site-footer-navegacion{color: $color-blanco;
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 1.7}
+
+.site-footer-imagen{width: 1.5rem;}
+.site-footer-h3{font-size: 2rem;}
+
+.site-footer-section{  display: flex;
+
+  align-items:center;             
+  gap: 3rem;
+  padding: 6rem 0rem 0rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*==================== RESPONSIVE ===================*/
+
+/*==================== TABLET ===================*/
+
+@media only screen and (min-width:768px){
+.site-footer-section{ 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto; 
+  gap: 2rem;
+  justify-items: center;  
+  align-items: center; 
+}
+.footer-logo {
+  grid-column: 1 / 3; 
+}
+
+}
+
+/*==================== DESKTOP ===================*/
+@media only screen and (min-width:992px){
+.site-footer-section{ 
+  display: flex;
+  flex-direction: row;
+}
+}

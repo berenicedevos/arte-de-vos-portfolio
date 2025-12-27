@@ -1,0 +1,142 @@
+@use "../utilities/variables" as *;
+
+
+/* ====== INDEX MAIN CONTENIDO ====== */
+
+.index-main-presentacion{display: flex; 
+  font-size: 2rem;
+  justify-content: center;
+  padding: 0rem;
+flex-direction: column;
+align-items: center;
+}
+.index-main-presentacion-h1{display: flex; 
+  font-size: 2.5rem;
+  justify-content: center;
+  padding: 3rem;}
+
+.index-main-texto {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+  .index-main-boton{
+  font-size: 1.2rem !important;
+  background-color: $color-violeta-oscuro!important;
+  color: $color-blanco !important;
+  border-color: $color-violeta-oscuro!important;
+  margin-top: 2rem !important;
+ }
+  
+.index-boton{
+display: flex;
+justify-content: center;
+}
+
+.index-h2{display: flex; 
+  font-size: 3rem;
+  justify-content: center;
+  padding: 10rem 3rem 3rem;}
+
+.index-main img{width: 30rem;}
+.tienda-main img{width: 30rem;}
+.galeria-main img{width: 30rem;}
+
+.index-frase{font-size: 1.5rem; 
+  padding: 2rem 1rem; 
+  text-align: center;
+  line-height: 1.7; 
+  border:0.2rem solid;
+  margin:7rem 1rem;
+  background: linear-gradient(90deg, $color-lila, $color-violeta-oscuro);
+  border-radius: 2rem;
+
+    p {
+   margin: 0;
+ }
+
+}
+
+/*==================== INDEX CARDS ===================*/
+
+.producto-card{
+width: 22rem;
+text-align: center;
+padding: 0.8rem;
+background-color: $color-lila;
+border-radius: 0.7rem;
+
+
+}
+
+.producto-card .producto-card-img{
+    width: 100%;
+    height: 22rem;  
+    object-fit: cover;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;  
+}
+
+.producto-card-titulo{
+
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.producto-card-precio{
+color: $color-negro;
+}
+
+.producto-card-boton{
+    font-size: 1rem;
+    background-color: $color-violeta-oscuro;
+    color: $color-blanco;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.6rem 2rem;
+}
+.contenerdor-flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/*==================== RESPONSIVE ===================*/
+
+/*==================== TABLET ===================*/
+@media only screen and (min-width:768px){
+.index-main-presentacion-h1{
+  font-size: 4rem;
+}
+  .index-h2{ 
+  font-size: 4rem;}
+   .carousel-item img {
+  width: 60%;
+  height: 35rem;
+} 
+.index-frase{
+  font-size: 2rem; 
+  padding: 3rem 1rem; 
+  }
+}
+
+/*==================== DESKTOP ===================*/
+@media only screen and (min-width:992px){
+.index-main-presentacion-h1{
+  font-size: 5rem;
+}
+  .index-h2{ 
+  font-size: 4rem;}
+ .carousel-item img {
+  width: 30%;
+  height: 35rem;
+} 
+.index-frase{
+  font-size: 2rem; 
+  padding: 3rem;
+  margin:7rem 5rem; 
+  }
+}
