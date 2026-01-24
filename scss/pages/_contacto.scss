@@ -1,3 +1,6 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extends" as *;
+
 /*======================CONTACTO FORMULARIO===================*/
 @use "../utilities/variables" as *;
 
@@ -23,13 +26,15 @@
     font-size: 1rem;
 }
 
-.formulario h1, p {
-  margin-top: 4rem;
-  text-align: center;
-}
-.formulario h1 {
-font-size: 3.5rem;
-}
+.formulario {
+    p {
+        text-align: center;
+    }
+
+    h1 {
+        @extend %titulos-estilo;
+    }
+  }    
 
 .formulario button{
     font-size: 1.2rem;

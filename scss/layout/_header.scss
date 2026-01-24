@@ -1,13 +1,13 @@
 /* ====== SITE HEADER ====== */
 @use "../utilities/variables" as *;
 
-.site-header-p{font-size: 2.5rem; 
-  color: $color-blanco;}
+.site-header-p{
+  font-size: 2.5rem; 
+  color: $color-blanco;
+  margin:0;
+}
 
-.site-header-logotipo{width: 10rem}
-/* .site-header-navegacion{color:var(--colorBlanco); 
-  text-decoration:none; 
-  font-size: 1.5rem;} */
+.site-header-logotipo{width: 6rem}
 
 .navbar.bg-body-tertiary {
   background-color: $color-violeta-oscuro !important;
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between; 
   align-items: center;             
-  padding: 3rem 3rem ;
+  padding: 1rem 3rem ;
   background-color: $color-violeta-oscuro;
   flex-direction: column;
 }

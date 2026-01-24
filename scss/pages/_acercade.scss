@@ -1,3 +1,6 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extends" as *;
+
 /*===================ACERCA DE=======================*/
 .acercade-contenedor{
     display: flex;
@@ -6,7 +9,7 @@
     justify-content: space-between; 
     align-items: center;
     gap: 4rem; 
-    padding: 2rem;
+    padding: 0rem 4rem 4rem;
 }
 
 .acercade-contenedor p{
@@ -20,9 +23,7 @@ height: 32rem;
 object-fit: cover
 }
 .acercade-h1{
-  text-align: center;
-  padding-top: 4rem;
-  font-size: 3rem;
+    @extend %titulos-estilo;
 }
 
 /*==================== RESPONSIVE ===================*/

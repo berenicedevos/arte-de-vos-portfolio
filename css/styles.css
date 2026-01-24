@@ -40,15 +40,13 @@ ul li:hover {
 .site-header-p {
   font-size: 2.5rem;
   color: rgb(250, 250, 250);
+  margin: 0;
 }
 
 .site-header-logotipo {
-  width: 10rem;
+  width: 6rem;
 }
 
-/* .site-header-navegacion{color:var(--colorBlanco); 
-  text-decoration:none; 
-  font-size: 1.5rem;} */
 .navbar.bg-body-tertiary {
   background-color: #7f119b !important;
 }
@@ -66,7 +64,7 @@ ul li:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 3rem;
+  padding: 1rem 3rem;
   background-color: #7f119b;
   flex-direction: column;
 }
@@ -89,11 +87,11 @@ ul li:hover {
 /* ====== SITE FOOTER ====== */
 /* ====== SITE FOOTER ====== */
 .site-footer-logotipo {
-  width: 14rem;
+  width: 11rem;
 }
 
 .site-footer-titulo {
-  font-size: 2.9rem;
+  font-size: 2rem;
 }
 
 .site-footer {
@@ -105,12 +103,13 @@ ul li:hover {
   display: flex;
   color: rgb(250, 250, 250);
   justify-content: center;
-  padding: 4rem;
+  padding: 3rem 2rem 0rem;
+  text-align: center;
 }
 
 .site-footer-navegacion {
   color: rgb(250, 250, 250);
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   line-height: 1.7;
 }
@@ -120,16 +119,25 @@ ul li:hover {
 }
 
 .site-footer-h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  width: 100%;
+  text-align: center;
 }
 
 .site-footer-section {
   display: flex;
   align-items: center;
   gap: 3rem;
-  padding: 6rem 0rem 0rem;
+  padding: 3rem 0rem 0rem;
   flex-direction: column;
   justify-content: space-around;
+}
+.site-footer-section ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
 }
 
 /*==================== RESPONSIVE ===================*/
@@ -166,6 +174,55 @@ ul li:hover {
 }
 
 /* ====== INDEX CONTENIDO ====== */
+.galeria-h1, .acercade-h1, .formulario h1, .tienda-h1, .index-h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 5rem;
+}
+
+.producto-card-galeria, .producto-card-tienda, .producto-card {
+  width: 22rem;
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #ceb1d4;
+  border-radius: 0.7rem;
+}
+
+.producto-card-galeria .producto-card-img-galeria, .producto-card-tienda .producto-card-img-tienda, .producto-card .producto-card-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.producto-card-galeria .producto-card-titulo-galeria, .producto-card-tienda .producto-card-titulo-tienda, .producto-card .producto-card-titulo {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.producto-card-tienda .producto-card-boton-tienda, .producto-card .producto-card-boton {
+  font-size: 1rem;
+  background-color: #7f119b;
+  color: rgb(250, 250, 250);
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.6rem 2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.producto-card-tienda .producto-card-boton-tienda:hover, .producto-card .producto-card-boton:hover {
+  background-color: #5a0b6e;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.contenerdor-flex-card-galeria, .contenerdor-flex-card-tienda, .contenerdor-flex-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
 /* ====== INDEX MAIN CONTENIDO ====== */
 .index-main-presentacion {
   display: flex;
@@ -204,21 +261,10 @@ ul li:hover {
 }
 
 .index-h2 {
-  display: flex;
-  font-size: 3rem;
-  justify-content: center;
-  padding: 10rem 3rem 3rem;
+  margin: 6rem 0rem 0rem;
 }
 
-.index-main img {
-  width: 30rem;
-}
-
-.tienda-main img {
-  width: 30rem;
-}
-
-.galeria-main img {
+.index-main img, .tienda-main img, .galeria-main img {
   width: 30rem;
 }
 
@@ -237,47 +283,9 @@ ul li:hover {
 }
 
 /*==================== INDEX CARDS ===================*/
-.producto-card {
-  width: 22rem;
-  text-align: center;
-  padding: 0.8rem;
-  background-color: #ceb1d4;
-  border-radius: 0.7rem;
-}
-
 .producto-card .producto-card-img {
-  width: 100%;
   height: 22rem;
-  object-fit: cover;
-  border-radius: 0.7rem;
-  margin-bottom: 1rem;
 }
-
-.producto-card-titulo {
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.producto-card-precio {
-  color: #000;
-}
-
-.producto-card-boton {
-  font-size: 1rem;
-  background-color: #7f119b;
-  color: rgb(250, 250, 250);
-  border: none;
-  border-radius: 0.7rem;
-  padding: 0.6rem 2rem;
-}
-
-.contenerdor-flex-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
 /*==================== RESPONSIVE ===================*/
 /*==================== TABLET ===================*/
 @media only screen and (min-width: 768px) {
@@ -316,10 +324,12 @@ ul li:hover {
 }
 /*====================GALERIA===================*/
 /*====================TIENDA===================*/
-.tienda-h2 {
-  font-size: 3.5rem;
-  text-align: center;
-  margin: 5rem 0rem;
+/*==================== CARDS ===================*/
+.producto-card-tienda .producto-card-img-tienda {
+  height: 22rem;
+}
+.contenerdor-flex-card-tienda {
+  padding: 0 0 5rem;
 }
 
 /*======================CONTACTO==================*/
@@ -345,15 +355,9 @@ ul li:hover {
   font-size: 1rem;
 }
 
-.formulario h1, p {
-  margin-top: 4rem;
+.formulario p {
   text-align: center;
 }
-
-.formulario h1 {
-  font-size: 3.5rem;
-}
-
 .formulario button {
   font-size: 1.2rem;
   background-color: #7f119b;
@@ -395,7 +399,7 @@ ul li:hover {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  padding: 2rem;
+  padding: 0rem 4rem 4rem;
 }
 
 .acercade-contenedor p {
@@ -407,12 +411,6 @@ ul li:hover {
   width: 22rem;
   height: 32rem;
   object-fit: cover;
-}
-
-.acercade-h1 {
-  text-align: center;
-  padding-top: 4rem;
-  font-size: 3rem;
 }
 
 /*==================== RESPONSIVE ===================*/
@@ -434,38 +432,11 @@ ul li:hover {
 }
 /*====================GALERIA===================*/
 /*====================GALERIA===================*/
-.galeria-h2 {
-  font-size: 3.5rem;
-  text-align: center;
-  margin: 5rem 0rem;
-}
-
-.producto-card-galeria {
-  width: 22rem;
-  text-align: center;
-  padding: 0.8rem;
-  background-color: #ceb1d4;
-  border-radius: 0.7rem;
-}
-
 .producto-card-galeria .producto-card-img-galeria {
-  width: 100%;
   height: auto;
-  object-fit: cover;
-  border-radius: 0.7rem;
-  margin-bottom: 1rem;
 }
-
-.producto-card-titulo-galeria {
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
 .contenerdor-flex-card-galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  padding: 0 0 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

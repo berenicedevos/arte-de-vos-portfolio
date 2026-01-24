@@ -1,7 +1,34 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extends" as *;
+
 /*====================TIENDA===================*/
-.tienda-h2{ 
-  font-size: 3.5rem;
-  text-align: center;
-  margin: 5rem 0rem;
+.tienda-h1{ 
+ @extend %titulos-estilo;
+}
+
+/*==================== CARDS ===================*/
+
+.producto-card-tienda {
+  @extend %card-estilo;
+  
+  .producto-card-img-tienda {
+    @extend %card-img-base;
+    height: 22rem; 
+  }
+
+  .producto-card-titulo-tienda{
+    @extend %card-titulo-base;
+  }
+
+  .producto-card-boton-tienda{
+    @extend %card-boton-base;
+
+  }
 
 }
+
+.contenerdor-flex-card-tienda {
+  @extend %flex-container-base;
+  padding: 0 0 5rem;
+}
+
