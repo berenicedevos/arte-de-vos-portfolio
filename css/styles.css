@@ -175,9 +175,11 @@ ul li:hover {
 
 /* ====== INDEX CONTENIDO ====== */
 .galeria-h1, .acercade-h1, .formulario h1, .tienda-h1, .index-h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-align: center;
-  padding: 5rem;
+  padding: 5rem 5rem 2rem;
+  font-weight: 500;
+  margin-bottom: 0rem;
 }
 
 .producto-card-galeria, .producto-card-tienda, .producto-card {
