@@ -41,6 +41,7 @@ ul li:hover {
   font-size: 2.5rem;
   color: rgb(250, 250, 250);
   margin: 0;
+  text-align: center;
 }
 
 .site-header-logotipo {
@@ -175,10 +176,10 @@ ul li:hover {
 
 /* ====== INDEX CONTENIDO ====== */
 .galeria-h1, .acercade-h1, .formulario h1, .tienda-h1, .index-h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
-  padding: 5rem 5rem 2rem;
-  font-weight: 500;
+  padding: 5rem 0rem 2rem;
+  font-weight: 600;
   margin-bottom: 0rem;
 }
 
@@ -237,7 +238,7 @@ ul li:hover {
 
 .index-main-presentacion-h1 {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   justify-content: center;
   padding: 3rem;
 }
